@@ -95,8 +95,7 @@ function animate(){
 if (scoreoffset > 1000){
     console.log('You Win the game')
     window.alert('Congrats, You won the game')
-    player.position.x = 0
-    scoreoffset = 0
+    window.alert('Your score :', scoreoffset)
 }}
 animate()
 addEventListener('keydown',({keyCode}) => {
