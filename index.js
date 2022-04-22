@@ -33,7 +33,7 @@ class Player{
 class Platform {
     constructor({x , y}) {
         this.position = {
-            x , y 
+            x , y    
         }
         this.width = 200
         this.height = 20
@@ -95,7 +95,7 @@ function animate(){
 if (scoreoffset > 2000){
     console.log('You Win the game')
     window.alert('Congrats, You won the game')
-    window.alert('Your score :',+scoreoffset)
+    window.alert('Your score :+',+scoreoffset)
 }}
 animate()
 addEventListener('keydown',({keyCode}) => {
