@@ -95,8 +95,7 @@ function animate(){
 if (scoreoffset > 2000){
     console.log('You Win the game')
     window.alert('Congrats, You won the game')
-    let value = True
-    window.alert('Your score :+',+scoreoffset)
+    window.alert('Your score :'+scoreoffset)
 }}
 animate()
 addEventListener('keydown',({keyCode}) => {
