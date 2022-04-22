@@ -45,7 +45,7 @@ class Platform {
 }
 const player = new Player()
 //const platform = new Platform()
-const platforms = [new Platform({x : 200, y: 200}), new Platform({ x : 800, y: 400}, new Platform({ x : 1000, y: 600}))]
+const platforms = [new Platform({x : 200, y: 200}), new Platform({ x : 800, y: 400}), new Platform({ x : 1000, y: 600})]
 const keys = {
     right : {
         pressed : false
@@ -92,10 +92,10 @@ function animate(){
         player.velocity.y = 0
     }
     })
-if (scoreoffset > 1000){
+if (scoreoffset > 2000){
     console.log('You Win the game')
     window.alert('Congrats, You won the game')
-    window.alert('Your score :',scoreoffset)
+    window.alert('Your score :',+scoreoffset)
 }}
 animate()
 addEventListener('keydown',({keyCode}) => {
