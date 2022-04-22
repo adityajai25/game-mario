@@ -36,7 +36,7 @@ class Platform {
             x , y    
         }
         this.width = 200
-        this.height = 20
+        this.height = 20.2
     }
     draw(){
         c.fillStyle = "blue"
@@ -45,7 +45,7 @@ class Platform {
 }
 const player = new Player()
 //const platform = new Platform()
-const platforms = [new Platform({x : 200, y: 200}), new Platform({ x : 800, y: 400}), new Platform({ x : 1000, y: 600})]
+const platforms = [new Platform({x : 200, y: 200}), new Platform({ x : 600, y: 400}), new Platform({ x : 1000, y: 600})]
 const keys = {
     right : {
         pressed : false
